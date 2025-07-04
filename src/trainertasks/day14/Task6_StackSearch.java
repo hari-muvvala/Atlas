@@ -14,14 +14,6 @@ public class Task6_StackSearch {
         System.out.println("Stack: " + names);
 
         int position = names.search("Divya");
-
-//        int position = names.search("Gopal");
         System.out.println(position);
-
-        if (position == -1) {
-            System.out.println("Element not found.");
-        } else {
-            System.out.println("Element found at position (from top): " + position);
-        }
     }
 }
