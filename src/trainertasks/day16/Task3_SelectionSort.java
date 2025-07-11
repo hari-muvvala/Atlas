@@ -3,12 +3,11 @@ package trainertasks.day16;
 public class Task3_SelectionSort {
     public static void main(String[] args) {
         int[] array = {29, 10, 14, 37, 13};
-        int length = array.length;
 
-        for (int i = 0; i < length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             int minIndex = i;
 
-            for (int j = i + 1; j < length; j++) {
+            for (int j = i + 1; j < array.length; j++) {
                 if (array[j] < array[minIndex]) {
                     minIndex = j;
                 }
