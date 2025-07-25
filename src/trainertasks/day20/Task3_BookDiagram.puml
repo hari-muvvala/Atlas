@@ -1,0 +1,23 @@
+@startuml
+
+class Task3_Book {
+    - title: String
+    - author: String
+    - price: double
+    + getTitle(): String
+    + getAuthor(): String
+    + getPrice(): double
+}
+
+class Task3_TitleFormatter {
+    + getFormattedTitle(book: Task3_Book): String
+}
+
+class Task3_DiscountCalculator {
+    + calculateDiscountedPrice(book: Task3_Book, discount: double): double
+}
+
+Task3_TitleFormatter --> Task3_Book
+Task3_DiscountCalculator --> Task3_Book
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+
+interface Task0_Notification {
+    + send(message: String)
+}
+
+class Task0_EmailNotification {
+    + send(message: String)
+}
+
+class Task0_SMSNotification {
+    + send(message: String)
+}
+
+class Task0_NotificationSender {
+    - notification: Task0_Notification
+    + Task0_NotificationSender(notification: Task0_Notification)
+    + notifyUser(message: String)
+}
+
+class Task0_SOLIDPrinciples {
+    + main(args: String[]): void
+}
+
+Task0_EmailNotification ..|> Task0_Notification
+Task0_SMSNotification ..|> Task0_Notification
+Task0_NotificationSender --> Task0_Notification
+Task0_SOLIDPrinciples --> Task0_NotificationSender
+
+@enduml
