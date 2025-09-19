@@ -1,0 +1,5 @@
+[
+  { "ID": 1001, "Name": "Hari Gopal", "Address": "Hyderabad", "Department": "Support Ops" },
+  { "ID": 1002, "Name": "Akhil",      "Address": "Bengaluru", "Department": "Engineering" },
+  { "ID": 1003, "Name": "Srinivas",   "Address": "Chennai",    "Department": "Analytics" }
+]
